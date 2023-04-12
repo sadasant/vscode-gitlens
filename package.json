@@ -6825,6 +6825,12 @@
 				"icon": "$(refresh)"
 			},
 			{
+				"command": "gitlens.views.workspaces.refresh",
+				"title": "Refresh",
+				"category": "GitLens",
+				"icon": "$(refresh)"
+			},
+			{
 				"command": "gitlens.views.worktrees.copy",
 				"title": "Copy",
 				"category": "GitLens"
@@ -9101,6 +9107,10 @@
 					"when": "false"
 				},
 				{
+					"command": "gitlens.views.workspaces.refresh",
+					"when": "false"
+				},
+				{
 					"command": "gitlens.views.worktrees.copy",
 					"when": "false"
 				},
@@ -10459,6 +10469,11 @@
 				{
 					"command": "gitlens.views.timeline.refresh",
 					"when": "view =~ /^gitlens\\.views\\.timeline/",
+					"group": "navigation@99"
+				},
+				{
+					"command": "gitlens.views.workspaces.refresh",
+					"when": "view =~ /^gitlens\\.views\\.workspaces/",
 					"group": "navigation@99"
 				},
 				{
